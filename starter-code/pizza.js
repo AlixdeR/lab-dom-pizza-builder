@@ -157,7 +157,7 @@ function renderPrice() {
   for (var ingredientKey in ingredients) {
     if (state[ingredientKey]) {
       endPrice += ingredients[ingredientKey].price;
-      list.innerHTML += `<li>$${ingredients[ingredientKey].price} ${ingredients[ingredientKey].name.toLowerCase()}<li>`;
+      list.innerHTML += `<li>$${ingredients[ingredientKey].price} ${ingredients[ingredientKey].name.toLowerCase()}</li>`;
     }
   }
   document.querySelector("aside.panel.price strong").innerHTML = "$" + endPrice;
